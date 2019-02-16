@@ -1,0 +1,14 @@
+tasks:
+- name: compile-openssl
+  commands:
+  - command: shell.exec
+    params:
+      script: |-
+        echo "Compile placeholder"
+
+buildvariants:
+- name: ubuntu1604
+  display_name: "Ubuntu 16.04"
+  run_on: localhostdistro
+  tasks:
+  - compile-openssl
